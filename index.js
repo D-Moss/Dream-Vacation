@@ -6,3 +6,16 @@ function myFunction() {
 		x.className = "topnav";
 	}
 }
+
+function changeTheme() {
+	let body = document.querySelector("body");
+
+	if (body.classList.contains("dark")) {
+		body.classList.remove("dark");
+	} else {
+		body.classList.add("dark");
+	}
+}
+
+let themeButton = document.querySelector(".theme");
+themeButton.addEventListener("click", changeTheme);
