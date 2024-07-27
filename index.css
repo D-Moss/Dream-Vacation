@@ -4,50 +4,10 @@
 
 body {
 	margin: 0;
-	background-color: #f1f1f1;
+	background-color: whitesmoke;
 	height: 100%;
 	padding: 20px;
 	font-family: Arial, Helvetica, sans-serif;
-}
-
-/*Theme*/
-.theme {
-	margin-top: 45px;
-	font-size: 10px;
-	background-color: black;
-	color: white;
-	padding: 5px 8px;
-	transition: all ms 200ms ease-in-out;
-}
-
-.theme:hover {
-	color: black;
-	background-color: white;
-}
-
-.image-container {
-	max-width: 1500px;
-	margin: 20px auto;
-	background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/134/428/original/daytime.png?1721447416");
-	background-repeat: no-repeat;
-	background-size: contain;
-	padding: 20px;
-	border-radius: 10px;
-}
-
-.dark {
-	background-color: navy;
-	color: white;
-}
-
-.dark .image-container {
-	background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/134/429/original/night-time.png?1721447579");
-	background-repeat: no-repeat;
-	background-size: contain;
-}
-
-.dark a {
-	color: pink;
 }
 
 /*Navigation Bar*/
@@ -84,29 +44,74 @@ body {
 	display: none;
 }
 
+/*Theme*/
+.theme {
+	margin-top: 45px;
+	font-size: 10px;
+	background-color: black;
+	color: white;
+	padding: 5px 8px;
+	transition: all ms 200ms ease-in-out;
+}
+
+.theme:hover {
+	color: black;
+	background-color: white;
+}
+
+.image-container {
+	max-width: 1800px;
+	margin: 20px auto;
+	background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/134/428/original/daytime.png?1721447416");
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.dark {
+	background-color: navy;
+	color: white;
+}
+
+.dark a {
+	color: pink;
+}
+
+.dark .image-container {
+	background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/134/429/original/night-time.png?1721447579");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.dark .hotel-column img {
+	width: 250px;
+	height: 175px;
+	box-shadow: 0 4px 8px 0 rgba(255, 255, 0, 0.9);
+}
+
 /*Welcome*/
 .welcome {
 	padding-top: 30px;
 }
 
-.welcome h1, 
-.welcome h2 {
+.welcome h1 {
 	font-weight: 900;
 	font-family: cursive;
 	text-align: center;
 }
 
 .welcome p {
-	padding: 20px;
+	padding: 10px 20px;
 }
 
 /*Attractions*/
-.row {
-	display: flex;
+.attraction {
+	text-align: center;
 }
 
-.row h2 {
-	text-align: center;
+.row {
+	display: flex;
 }
 
 .column {
@@ -120,12 +125,16 @@ body {
 }
 
 /*Adventure*/
+#adventures {
+	text-align: center;
+}
+
 .explore p {
 	padding: 0 20px;
 }
 
 /*Dining*/
-#food {
+.dining h2 {
 	text-align: center;
 	font-family: sans-serif;
 }
@@ -135,36 +144,51 @@ p {
 }
 
 /*Hotel*/
-*:before,
-*:after {
-	box-sizing: inherit;
+.hotel h1,
+.hotel h2,
+.hotel p {
+	text-align: center;
+}
+
+.hotel-row:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .hotel-column {
 	float: left;
 	width: 20%;
-	margin-bottom: 16px;
-	padding: 0 8px;
+	text-align: center;
+	font-size: 25px;
+	cursor: pointer;
+	color: white;
 }
 
-.card {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
-}
-
-.card img {
+.hotel-column img {
 	width: 250px;
 	height: 175px;
+	box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.9);
 }
 
-.hotel-container {
-	padding: 0 16px;
+.containerTab {
+	padding: 20px;
+	color: white;
 }
 
-.hotel-container::after,
-.hotel-row::after {
-	content: "";
-	clear: both;
-	display: table;
+.other {
+	color: black;
+}
+
+.containerTab h3 {
+	text-align: center;
+}
+
+.closebtn {
+	float: right;
+	color: white;
+	font-size: 35px;
+	cursor: pointer;
 }
 
 .hotel-button {
@@ -182,13 +206,13 @@ p {
 	background-color: #ddd;
 }
 
-.hotel-button a {
-	color: white;
+.hotel-button:hover a {
+	color: black;
 	text-decoration: none;
 }
 
-.hotel-button:hover a {
-	color: black;
+.hotel-button a {
+	color: white;
 	text-decoration: none;
 }
 
@@ -197,6 +221,10 @@ footer {
 	text-align: center;
 	padding-top: 15px;
 	border-top: 1px solid #f91e5;
+}
+
+footer a {
+	color: navy;
 }
 
 /*Responsive*/
@@ -226,7 +254,7 @@ footer {
 	}
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
 	.hotel-column {
 		width: 100%;
 		display: block;

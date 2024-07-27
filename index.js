@@ -17,5 +17,14 @@ function changeTheme() {
 	}
 }
 
+function openTab(tabName) {
+	var a, y;
+	y = document.getElementsByClassName("containerTab");
+	for (a = 0; a < y.length; a++) {
+		y[a].style.display = "none";
+	}
+	document.getElementById(tabName).style.display = "block";
+}
+
 let themeButton = document.querySelector(".theme");
 themeButton.addEventListener("click", changeTheme);
