@@ -4,10 +4,18 @@
 
 body {
 	margin: 0;
-	background-color: whitesmoke;
+	background-color: yellow;
 	height: 100%;
 	padding: 20px;
 	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, .hotel p {
+	text-align: center;
+}
+
+p {
+	font-size: 18px;
 }
 
 /*Navigation Bar*/
@@ -35,11 +43,6 @@ body {
 	color: black;
 }
 
-.topnav a.active {
-	background-color: #04aa6d;
-	color: white;
-}
-
 .topnav .icon {
 	display: none;
 }
@@ -47,11 +50,11 @@ body {
 /*Theme*/
 .theme {
 	margin-top: 45px;
-	font-size: 10px;
+	font-size: 12px;
 	background-color: black;
 	color: white;
-	padding: 5px 8px;
-	transition: all ms 200ms ease-in-out;
+	padding: 5px 10px;
+	transition: all ms 1000s ease-in-out;
 }
 
 .theme:hover {
@@ -59,19 +62,9 @@ body {
 	background-color: white;
 }
 
-.image-container {
-	max-width: 1800px;
-	margin: 20px auto;
-	background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/134/428/original/daytime.png?1721447416");
-	background-repeat: no-repeat;
-	background-size: contain;
-	padding: 20px;
-	border-radius: 10px;
-}
-
 .dark {
 	background-color: navy;
-	color: white;
+	color: yellow;
 }
 
 .dark a {
@@ -79,15 +72,27 @@ body {
 }
 
 .dark .image-container {
-	background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/134/429/original/night-time.png?1721447579");
+	background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/136/107/original/night.jpg?1722234730");
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
+	padding: 20px;
+	height: 1050px;
+	margin: 20px auto;
 }
 
 .dark .hotel-column img {
 	width: 250px;
 	height: 175px;
 	box-shadow: 0 4px 8px 0 rgba(255, 255, 0, 0.9);
+}
+
+.image-container {
+	margin: 20px auto;
+	background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/136/106/original/day.jpg?1722234705");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 20px;
+	height: 950px;
 }
 
 /*Welcome*/
@@ -97,59 +102,23 @@ body {
 
 .welcome h1 {
 	font-weight: 900;
-	font-family: cursive;
-	text-align: center;
 }
 
 .welcome p {
-	padding: 10px 20px;
+	padding: 10px 0;
 }
 
-/*Attractions*/
-.attraction {
-	text-align: center;
-}
-
+/*Attraction*/
 .row {
 	display: flex;
 }
 
 .column {
 	flex: 50%;
-	padding: 20px 0;
-}
-
-.column h3 {
-	text-align: center;
-	padding: 15px 0;
-}
-
-/*Adventure*/
-#adventures {
-	text-align: center;
-}
-
-.explore p {
-	padding: 0 20px;
-}
-
-/*Dining*/
-.dining h2 {
-	text-align: center;
-	font-family: sans-serif;
-}
-
-p {
 	padding: 0 20px;
 }
 
 /*Hotel*/
-.hotel h1,
-.hotel h2,
-.hotel p {
-	text-align: center;
-}
-
 .hotel-row:after {
 	content: "";
 	display: table;
@@ -166,22 +135,15 @@ p {
 }
 
 .hotel-column img {
-	width: 250px;
-	height: 175px;
+	width: 175px;
+	height: 250px;
 	box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.9);
 }
 
 .containerTab {
 	padding: 20px;
 	color: white;
-}
-
-.other {
-	color: black;
-}
-
-.containerTab h3 {
-	text-align: center;
+	display: none;
 }
 
 .closebtn {
@@ -199,7 +161,13 @@ p {
 	background-color: #000;
 	text-align: center;
 	cursor: pointer;
-	width: 100%;
+	width: 0 auto;
+	margin-left: 50%;
+}
+
+.hotel-button a {
+	color: white;
+	text-decoration: none;
 }
 
 .hotel-button:hover {
@@ -211,16 +179,11 @@ p {
 	text-decoration: none;
 }
 
-.hotel-button a {
-	color: white;
-	text-decoration: none;
-}
-
 /*Footer*/
-footer {
-	text-align: center;
+footer p {
 	padding-top: 15px;
-	border-top: 1px solid #f91e5;
+	font-size: 12px;
+	text-align: center;
 }
 
 footer a {
@@ -240,7 +203,7 @@ footer a {
 
 @media screen and (max-width: 600px) {
 	.topnav.responsive {
-		position: relative;
+		position: fixed;
 	}
 	.topnav.responsive .icon {
 		position: absolute;
@@ -255,8 +218,5 @@ footer a {
 }
 
 @media screen and (max-width: 600px) {
-	.hotel-column {
-		width: 100%;
-		display: block;
-	}
+	
 }
