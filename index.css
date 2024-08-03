@@ -307,6 +307,9 @@ footer a {
 		background-size: contain;
 		height: 500px;
 	}
+	.dark .image-container {
+		height: 390px;
+	}
 }
 
 @media screen and (max-width: 865px) {
