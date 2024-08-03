@@ -14,10 +14,6 @@ h1, h2, h3, h4, .hotel p {
 	text-align: center;
 }
 
-p {
-	font-size: 18px;
-}
-
 /*Navigation Bar*/
 .topnav {
 	position: fixed;
@@ -155,8 +151,20 @@ p {
 }
 
 /*Food*/
-.dining {
-	padding-top: 7px;
+.dining h2 {
+	margin-top: 25px;
+}
+
+.strat {
+	float: left;
+	width: 25%;
+	padding-right: 10px;
+}
+
+.mgmgrand {
+	float: right;
+	width: 25%;
+	padding-left: 10px;
 }
 
 /*Hotel*/
