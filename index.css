@@ -286,6 +286,10 @@ footer a {
 		background-size: contain;
 		height: 0;
 	}
+	.dark .image-container {
+		background-size: contain;
+		height: 0;
+	}
 }
 
 @media screen and (max-width: 559px) {
