@@ -116,11 +116,18 @@ h1, h2, h3, h4, .hotel p {
 }
 
 /*Attraction*/
+.attractions h2 {
+	padding: 30px 0;
+}
+
 .attractions h3 {
 	text-align: left;
 }
 
 /*Adventure*/
+.explore {
+	padding: 30px 0;
+}
 .venture1 {
 	float: left;
 	width: 50%;
@@ -130,7 +137,7 @@ h1, h2, h3, h4, .hotel p {
 	float: left;
 	width: 50%;
 	text-align: justify;
-	padding-left: 10px;
+	padding-left: 15px;
 }
 
 .venture2 {
@@ -142,7 +149,8 @@ h1, h2, h3, h4, .hotel p {
 	float: right;
 	width: 50%;
 	text-align: justify;
-	padding-right: 10px;
+	padding-right: 15px;
+	padding-top: 10px;
 }
 
 .clear {
@@ -152,7 +160,7 @@ h1, h2, h3, h4, .hotel p {
 
 /*Food*/
 .dining h2 {
-	margin-top: 25px;
+	padding: 30px 0;
 }
 
 .strat {
@@ -168,6 +176,10 @@ h1, h2, h3, h4, .hotel p {
 }
 
 /*Hotel*/
+.hotel h1 {
+	padding-top: 30px;
+}
+
 .hotel-row {
 	display: flex;
 	flex-wrap: wrap;
