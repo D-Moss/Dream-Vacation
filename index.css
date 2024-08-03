@@ -292,7 +292,7 @@ footer a {
 	}
 }
 
-@media screen and (max-width: 559px) {
+@media screen and (max-width: 650px) {
 	.image-container {
 		height: 350px;
 		width: 100%;
