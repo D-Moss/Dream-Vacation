@@ -288,6 +288,16 @@ footer a {
 	}
 }
 
+@media screen and (max-width: 559px) {
+	.image-container {
+		height: 350px;
+		width: 100%;
+	}
+	.dark .image-container {
+		height: 370px;
+	}
+}
+
 @media screen and (max-width: 865px) {
 	.image-container {
 		background-size: contain;
