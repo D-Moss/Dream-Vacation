@@ -282,6 +282,12 @@ footer a {
 }
 
 @media screen and (max-width: 865px) {
+	body {
+		background-color: purple;
+	}
+}
+
+@media screen and (max-width: 865px) {
 	.venture1-text {
 		width: 100%;
 		text-align: left;
