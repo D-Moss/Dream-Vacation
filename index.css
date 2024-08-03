@@ -274,7 +274,10 @@ footer a {
 }
 
 @media screen and (max-width: 865px) {
+	.venture1-text {
+		text-align: left;
+	}
 	.venture2-text {
-		text-align: right;
+		text-align: left;
 	}
 }
