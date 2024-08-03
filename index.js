@@ -18,6 +18,16 @@ function changeTheme() {
 	}
 }
 
+function changeName() {
+	const btn = document.querySelector('button');
+
+	if (btn.innerText === 'Day') {
+		btn.innerText = 'Night';
+	} else {
+		btn.innerText = 'Day';
+	}
+}
+
 function openTab(tabName) {
 	var a, y;
 	y = document.getElementsByClassName("containerTab");

@@ -6,11 +6,11 @@ body {
 	margin: 0;
 	background-color: yellow;
 	height: 100%;
-	padding: 20px;
+	padding: 30px;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-h1, h2, h3, .hotel p {
+h1, h2, h3, h4, .hotel p {
 	text-align: center;
 }
 
@@ -47,19 +47,43 @@ p {
 	display: none;
 }
 
+/*Welcome*/
+.welcome {
+	padding-top: 30px;
+}
+
+.welcome h1 {
+	font-weight: 900;
+}
+
+.welcome h2 {
+	padding-top: 14px;
+	margin-bottom: 0;
+}
+
+.welcome h3 {
+	margin-top: 0;
+}
+
+.welcome p {
+	padding: 10px 0;
+}
+
 /*Theme*/
 .theme {
 	margin-top: 45px;
-	font-size: 12px;
-	background-color: black;
-	color: white;
-	padding: 5px 10px;
+	font-size: 18px;
+	background-color: white;
+	color: black;
+	padding: 5px 7px;
 	transition: all ms 1000s ease-in-out;
+	text-decoration: underline;
+	border: yellow;
 }
 
 .theme:hover {
-	color: black;
-	background-color: white;
+	color: white;
+	background-color: black;
 }
 
 .dark {
@@ -76,8 +100,8 @@ p {
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 20px;
-	height: 1050px;
 	margin: 20px auto;
+	height: 1050px;
 }
 
 .dark .hotel-column img {
@@ -91,41 +115,63 @@ p {
 	background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/136/106/original/day.jpg?1722234705");
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 20px;
 	height: 950px;
-}
-
-/*Welcome*/
-.welcome {
-	padding-top: 30px;
-}
-
-.welcome h1 {
-	font-weight: 900;
-}
-
-.welcome p {
-	padding: 10px 0;
+	padding: 20px;
 }
 
 /*Attraction*/
-.row {
-	display: flex;
+.attractions h3 {
+	text-align: left;
 }
 
-.column {
-	flex: 50%;
-	padding: 0 20px;
+/*Adventure*/
+.venture1 {
+	float: left;
+	width: 50%;
+}
+
+.venture1-text {
+	float: left;
+	width: 50%;
+	text-align: justify;
+	padding-left: 10px;
+}
+
+.venture2 {
+	float: right;
+	width: 50%;
+}
+
+.venture2-text {
+	float: right;
+	width: 50%;
+	text-align: justify;
+	padding-right: 10px;
+}
+
+.clear {
+	clear: both;
+	display: block;
+}
+
+/*Food*/
+.dining {
+	padding-top: 7px;
 }
 
 /*Hotel*/
+.hotel-row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .hotel-row:after {
 	content: "";
 	display: table;
 	clear: both;
 }
 
-.hotel-column {
+#hotel-column {
 	float: left;
 	width: 20%;
 	text-align: center;
@@ -134,7 +180,7 @@ p {
 	color: white;
 }
 
-.hotel-column img {
+#hotel-column img {
 	width: 175px;
 	height: 250px;
 	box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.9);
@@ -182,7 +228,7 @@ p {
 /*Footer*/
 footer p {
 	padding-top: 15px;
-	font-size: 12px;
+	font-size: 13px;
 	text-align: center;
 }
 
@@ -218,5 +264,18 @@ footer a {
 }
 
 @media screen and (max-width: 600px) {
-	
+	#hotel-column {
+		width: 100%;
+	}
+	.hotel-button {
+		text-align: center;
+		margin-left: 35%;
+	}
+}
+
+@media screen and (max-width: 865px) {
+	.image-container {
+		max-width: 100%;
+		height: auto;
+	}
 }

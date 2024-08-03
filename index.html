@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Dream Vacation</title>
@@ -22,55 +23,61 @@
 	</div>
 
 	<div id="vegas">
-		<button class="theme">Night</button>
-
+		
 		<!--Welcome Message Open-->
 		<div class="welcome">
 			<h1>Welcome to Las Vegas...</h1>
+			<h2>The city of Paradise</h2>
+			<h3>Dreams come true during the <button class="theme" id="nbtn" onclick="changeName()">
+					Night
+				</button>
+			</h3>
 			<p>
 				Las Vegas, the glittering jewel in the desert, is a playground for the adventurous at heart. It's where the excitement of the casinos, the glamour of the shows, and the luxury of fine dining come together to create a vacation experience like no other. Every corner of this vibrant city is designed to astonish and delight, from the stunning fountains of Bellagio to the towering heights of the Stratosphere. Las Vegas promises a dream vacation where the memories will shine as brightly as the neon lights on the Strip. Whether seeking thrills or relaxation, visitors find that Las Vegas truly offers it all, wrapped in a package of endless wonder.
 			</p>
 		</div>
 	</div>
-	<!--Welcome Message Close-->
-
 	<div class="image-container">
 		<div class="container"></div>
 	</div>
+	<!--Welcome Message Close-->
 
 	<!--Attraction Open-->
-	<div id="attraction">
-		<h2 class="attractions">Time to find something to do</h2>
-		<div class="row">
-			<div class="column">
-				<h3>On the Strip Attractions</h3>
-				<p>
-					Las Vegas, the glittering jewel in the desert, is a world of vibrant energy and endless entertainment options. Imagine strolling down the Strip, where the Eiffel Tower rises majestically at Paris Las Vegas, offering a taste of French romance amidst the neon lights. Themed hotels and attractions transport you across continents; from the gondolas of the Venetian to the ancient aura of the Luxor Hotel, shaped like a giant pyramid. The Bellagio fountains dance in a mesmerizing display of water choreographed to music, while the botanical gardens inside provide a tranquil oasis of natural beauty. Thrilling rides atop the Stratosphere tower give adrenaline junkies their fix, with breathtaking views of the cityscape. Casinos, the beating heart of Las Vegas, buzz with the excitement of chance and the clinking of slot machines. For those seeking a unique experience, the wedding chapels offer a chance to say 'I do' in the most memorable way possible. And when the sun sets, the city transforms into a neon wonderland, with lights that guide you through an adventure of discovery. Indeed, Las Vegas is a dream vacation, a place where you can travel the world without ever leaving the ground, a city that promises and delivers the extraordinary.
-				</p>
-			</div>
+	<div class="attractions" id="attraction">
+		<h2>Time to find something to do</h2>
+		<h3>On the Strip Attractions</h3>
+		<p>
+			Las Vegas, the glittering jewel in the desert, is a world of vibrant energy and endless entertainment options. Imagine strolling down the Strip, where the Eiffel Tower rises majestically at Paris Las Vegas, offering a taste of French romance amidst the neon lights. Themed hotels and attractions transport you across continents; from the gondolas of the Venetian to the ancient aura of the Luxor Hotel, shaped like a giant pyramid. The Bellagio fountains dance in a mesmerizing display of water choreographed to music, while the botanical gardens inside provide a tranquil oasis of natural beauty. Thrilling rides atop the Stratosphere tower give adrenaline junkies their fix, with breathtaking views of the cityscape. Casinos, the beating heart of Las Vegas, buzz with the excitement of chance and the clinking of slot machines. For those seeking a unique experience, the wedding chapels offer a chance to say 'I do' in the most memorable way possible. And when the sun sets, the city transforms into a neon wonderland, with lights that guide you through an adventure of discovery. Indeed, Las Vegas is a dream vacation, a place where you can travel the world without ever leaving the ground, a city that promises and delivers the extraordinary.
+		</p>
 
-			<div class="column">
-				<h3>Off the Strip Attractions</h3>
-				<p>
-					Fremont Street, the pulsating heart of Las Vegas, offers an immersive journey through the vibrant history and culture of this iconic city. Here, the past and present merge in a symphony of neon lights, where every corner whispers tales of yesteryears while celebrating the now. It's a place where adventure beckons from above as the SlotZilla Zipline invites the brave to soar, and down below, the street comes alive with an eclectic mix of performers that captivate and charm. Amidst the vintage allure of classic casinos, the modern-day thrills of high-stakes games await, offering a slice of the old-school Vegas experience. As the night deepens, the culinary scene emerges, a smorgasbord of flavors that cater to every palate, from the refined tastes of gourmet dining to the hearty simplicity of street food. Fremont Street is not just a walk; it's an experience, a celebration of the spirit of Las Vegas, where every visit is a new chapter in its legendary story. Come and write your own, under the glow of the largest screen you've ever seen, and be swept away by the sheer magic of Fremont Street.
-				</p>
-			</div>
-		</div>
+		<h3>Off the Strip Attractions</h3>
+		<p>
+			Fremont Street, the pulsating heart of Las Vegas, offers an immersive journey through the vibrant history and culture of this iconic city. Here, the past and present merge in a symphony of neon lights, where every corner whispers tales of yesteryears while celebrating the now. It's a place where adventure beckons from above as the SlotZilla Zipline invites the brave to soar, and down below, the street comes alive with an eclectic mix of performers that captivate and charm. Amidst the vintage allure of classic casinos, the modern-day thrills of high-stakes games await, offering a slice of the old-school Vegas experience. As the night deepens, the culinary scene emerges, a smorgasbord of flavors that cater to every palate, from the refined tastes of gourmet dining to the hearty simplicity of street food. Fremont Street is not just a walk; it's an experience, a celebration of the spirit of Las Vegas, where every visit is a new chapter in its legendary story. Come and write your own, under the glow of the largest screen you've ever seen, and be swept away by the sheer magic of Fremont Street.
+		</p>
 	</div>
 	<!--Attraction Close-->
 
 	<!--Adventure Open-->
 	<h2 id="adventure" class="explore">An Adventure Awaits...</h2>
-	<div>
-		<p>
+	<div class="venture-container">
+		<div class="venture1">
+			<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/136/586/original/grandcanyon.jpg?1722480931" width="100%">
+		</div>
+		<p class="venture1-text">
 			Venturing beyond the glittering lights of Las Vegas, the surrounding area offers a treasure trove of natural wonders and outdoor activities that promise adventure and awe-inspiring vistas. Imagine the thrill of exploring the vast expanse of the Grand Canyon, where the layers of colorful rock formations tell the story of Earth's geological history. Picture yourself navigating the rugged trails of Red Rock Canyon on an electric bike, the wind in your hair and the sun casting warm hues on the sandstone peaks. The Mojave Desert stretches out like a canvas painted with the most intricate details by nature itself, offering a serene escape where one can witness the resilience of life in arid conditions.
 
 			<br><br>
 
 			Antelope Canyon's winding corridors, carved by water and time, invite you to lose yourself in their otherworldly beauty, while the Valley of Fire State Park dazzles with its fiery red sandstone formations that seem to glow with an inner light. Horseshoe Bend, a dramatic curve of the Colorado River, presents a view so stunning it feels like standing on the edge of the world. For those seeking a more rugged experience, the roar of an ATV engine provides a rush of adrenaline as you traverse challenging terrains, kicking up clouds of dust in your wake.
+		</p>
+	</div>
+	<div class="clear"></div>
 
-			<br><br>
-
+	<div class="venture-container2">
+		<div class="venture2">
+			<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/136/587/original/mojavedesert.jpg?1722480939" width="100%">
+		</div>
+		<p class="venture2-text">
 			As the day wanes, consider the romantic notion of a horseback ride at sunset, the sky painted with strokes of pink and orange, the silhouette of the mountains providing a dramatic backdrop. This is a moment of tranquility, a time to reflect on the day's adventures and the beauty of the natural world. And if the call of the ocean is too strong to resist, a day trip to California offers the soothing sounds of waves and the soft sands of its beaches, a stark contrast to the desert's rugged charm. Rodeo Drive awaits with its luxurious boutiques, a playground for those who find their thrills in the latest fashion trends.
 
 			<br><br>
@@ -78,6 +85,7 @@
 			This region is a mosaic of experiences, each piece a unique adventure, from the depths of canyons to the heights of mountain peaks, from the quiet of the desert to the bustle of the city. It's a reminder that adventure doesn't always lie in distant lands; sometimes, it's just outside your doorstep, waiting for you to step out and explore. Whether you're a thrill-seeker or a nature lover, the world outside Las Vegas is a landscape of endless possibilities, a place where memories are waiting to be made. So why wait? The adventure of a lifetime could begin with a single step into the vastness that lies beyond the neon lights.
 		</p>
 	</div>
+	<div class="clear"></div>
 	<!--Adventure Close-->
 
 	<!--Dining Open-->
@@ -114,23 +122,23 @@
 
 	<div class="hotel-row">
 		
-		<div class="hotel-column" onclick="openTab('b1');">
-			<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/466/original/Luxor.jpg?1720996113" alt="Luxor" style="width:100%">
+		<div class="col-sm-2.4" id="hotel-column" onclick="openTab('b1');">
+			<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/466/original/Luxor.jpg?1720996113" alt="Luxor" style="width: 100%">
 		</div>
 
-		<div class="hotel-column" onclick="openTab('b2');">
+		<div class="col-sm-2.4" id="hotel-column" onclick="openTab('b2');">
 			<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/465/original/GoldenNugget.jpg?1720996089" alt="Golden Nugget" style="width: 100%">
 		</div>
 
-		<div class="hotel-column" onclick="openTab('b3');">
+		<div class="col-sm-2.4" id="hotel-column" onclick="openTab('b3');">
 			<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/469/original/Venetian.jpg?1720996166" alt="Venetian" style="width:100%">
 		</div>
 
-		<div class="hotel-column" onclick="openTab('b4');">
+		<div class="col-sm-2.4" id="hotel-column" onclick="openTab('b4');">
 			<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/654/original/apache.jpg?1721100840" alt="Hotel Apache" style="width:100%">
 		</div>
 
-		<div class="hotel-column" onclick="openTab('b5');">
+		<div class="col-sm-2.4" id="hotel-column" onclick="openTab('b5');">
 			<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/636/original/Tower.jpg?1721082395" alt="STRAT" style="width:100%">
 		</div>
 	</div>
@@ -231,6 +239,7 @@
 			<a href="https://app.netlify.com/teams/d-moss-o8d9vci/sites" target="_blank"> hosted on Netlify</a>
 		</p>
 	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 	<script src="index.js"></script>
 </body>
 </html>
