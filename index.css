@@ -294,8 +294,9 @@ footer a {
 }
 
 @media screen and (max-width: 395px) {
-	body {
-		background-color: purple;
+	.image-container {
+		height: 200px;
+		width: 100%;
 	}
 }
 
