@@ -301,6 +301,18 @@ footer a {
 	}
 }
 
+@media screen and (max-width: 865px) {
+	.image-container {
+		width: 100%;
+		height: 510px;
+	}
+	.dark .image-container {
+		width: 100%;
+		height: 540px;
+	}
+}
+
+
 /*Adventure Image Size*/
 @media screen and (max-width: 865px) {
 	.venture1-text {
