@@ -289,11 +289,12 @@ footer a {
 
 /*Welcome Image*/
 @media screen and (max-width: 420px) {
-	.image-container {          /*Portrait for S24 Ultra*/
-		height: 225px;			/*Landscape for Tablet*/
-		width: 100%;
+	.image-container {
+		background-size: contain;
+		height: 510px;
 	}
 	.dark .image-container {
+		background-size: contain;
 		height: 250px;
 		width: 100%;
 	}
