@@ -292,14 +292,14 @@ footer a {
 	.image-container {          /*Portrait for S24 Ultra*/
 		height: 225px;			/*Landscape for Tablet*/
 		width: 100%;
+		background-size: contain;
 	}
 	.dark .image-container {
 		height: 250px;
 		width: 100%;
+		background-size: contain;
 	}
 }
-
-								/**/
 
 /*Adventure Image Size*/
 @media screen and (max-width: 865px) {
