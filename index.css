@@ -293,30 +293,9 @@ footer a {
 	}
 }
 
-@media screen and (max-width: 420px) {
-	.image-container {
-		background-size: contain;
-		height: 0;
-	}
-	.dark .image-container {
-		height: 100px;
-	}
-}
-
-@media screen and (max-width: 650px) {
-	.image-container {
-		height: 350px;
-		width: 100%;
-	}
-}
-
-@media screen and (max-width: 865px) {
-	.image-container {
-		background-size: contain;
-		height: 500px;
-	}
-	.dark .image-container {
-		height: 540px;
+@media screen and (max-width: 125px) {
+	body {
+		background-color: purple;
 	}
 }
 
