@@ -293,7 +293,7 @@ footer a {
 	}
 }
 
-@media screen and (max-width: 125px) {
+@media screen and (max-width: 225px) {
 	body {
 		background-color: purple;
 	}
