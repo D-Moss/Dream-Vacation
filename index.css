@@ -257,6 +257,8 @@ footer a {
 }
 
 /*Responsive*/
+
+/*Navigation Bar*/
 @media screen and (max-width: 600px) {
 	.topnav a:not(:first-child) {
 		display: none;
@@ -283,20 +285,12 @@ footer a {
 	}
 }
 
-@media screen and (max-width: 600px) {
-	#hotel-column {
-		width: 100%;
-	}
-	.hotel-button {
-		text-align: center;
-		margin-left: 35%;
-	}
-}
 
-/*Image Size for Samsung S24*/
-@media screen and (max-width: 395px) {
-	.image-container {
-		height: 225px;
+
+/*Welcome Image*/
+@media screen and (max-width: 420px) {
+	.image-container {          /*Portrait for S24 Ultra*/
+		height: 225px;			/*Landscape for Tablet*/
 		width: 100%;
 	}
 	.dark .image-container {
@@ -305,6 +299,9 @@ footer a {
 	}
 }
 
+								/**/
+
+/*Adventure Image Size*/
 @media screen and (max-width: 865px) {
 	.venture1-text {
 		width: 100%;
@@ -313,5 +310,16 @@ footer a {
 	.venture2-text {
 		width: 100%;
 		text-align: left;
+	}
+}
+
+/*Hotel Size*/
+@media screen and (max-width: 600px) {
+	#hotel-column {
+		width: 100%;
+	}
+	.hotel-button {
+		text-align: center;
+		margin-left: 35%;
 	}
 }
