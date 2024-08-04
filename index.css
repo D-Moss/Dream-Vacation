@@ -293,9 +293,14 @@ footer a {
 	}
 }
 
+/*Image Size for Samsung S24*/
 @media screen and (max-width: 395px) {
 	.image-container {
 		height: 225px;
+		width: 100%;
+	}
+	.dark .image-container {
+		height: 250px;
 		width: 100%;
 	}
 }
