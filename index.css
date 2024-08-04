@@ -300,7 +300,7 @@ footer a {
 	}
 	.dark .image-container {
 		background-size: contain;
-		height: 0;
+		height: 100px;
 	}
 }
 
